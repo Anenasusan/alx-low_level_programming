@@ -6,19 +6,26 @@
 
 int main(void)
 {
-	int c = 0;
-
-	while (c <= 99)
+	int i, j;
+	for (i = 0; i < 100; i++)
 	{
-		putchar(c / 10 + '0');
-		putchar(c % 10 + '0');
-		if (c != 99)
+		for (j = 0; j < 100; j++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (i < j)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i ! = 98 || j ! = 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-		c++;
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
