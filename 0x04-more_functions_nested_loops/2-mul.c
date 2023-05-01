@@ -2,12 +2,11 @@
 #include <stdio.h>
 
 /**
- * mul - multiplies two integers
- * @a:The first integers
- * @b:The second integers
- * Return:Always 0
- */
-
+  * mul - Multiplies two int
+  * @a: - The First integer
+  * @b: - The Second integer
+  * Return: Always 0
+  */
 int mul(int a, int b)
 {
 int result = a * b;
