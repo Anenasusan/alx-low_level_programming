@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 *_strchr - prints the consecutive caracters of s1 that are in s
 *
